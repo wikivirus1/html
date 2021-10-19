@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+* {
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px;
+}
+
+.contain{
+    border: 3px solid black;
+    margin: 2px;
+    height: auto;
+    background-color: rgb(175, 172, 172);
+}
+
+h2{
+    border: 2px solid black;
+    /* justify-content: right; */
+    display: inline-block ;
+    margin-block-start: 0px;
+    margin-block-end: 0px;   
+}
+
+.kevin{
+    background-color: rgb(233, 155, 155);
+}
+
+.divy{
+    background-color: rgb(144, 218, 144);
+}
+
+.Shyam{
+    background-color: rgb(236, 236, 133);
+}
+
+@media(min-width:992px){
+    .column-1,.column-2,.column-3{
+        float: left;
+        width: 33.33%;;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .column{
+        float: left;
+    }
+    .column-1{
+        width: 50%;
+    }
+    .column-2{
+        width: 50%;
+    }
+    .column-3{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .column{
+        float: left;
+    }
+    .column-1{
+        width: 100%;
+    }
+     .column-2{
+        width: 100%;
+    } 
+    .column-3{
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <!-- HANDING  -->
+    <div class="handing">
+        <h1>OUR MENU</h1>
+    </div>
+
+
+    <div class="row">
+        <div class="column column-1">
+          <div class="contain">
+            <h2 class="kevin">Chicken</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate architecto, laborum laboriosam, fugit ratione repellat obcaecati exercitationem ipsum placeat necessitatibus vitae impedit consectetur autem esse ducimus porro aperiam tempore? Ab?</p>
+          </div>
+        </div>
+      
+        <div class="column column-2" >
+          <div class="contain">
+            <h2 class="divy">Beef</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate architecto, laborum laboriosam, fugit ratione repellat obcaecati exercitationem ipsum placeat necessitatibus vitae impedit consectetur autem esse ducimus porro aperiam tempore? Ab?</p>
+          </div>
+        </div>
+      
+        <div class="column column-3">
+          <div class="contain">
+            <h2 class="Shyam">Sushi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate architecto, laborum laboriosam, fugit ratione repellat obcaecati exercitationem ipsum placeat necessitatibus vitae impedit consectetur autem esse ducimus porro aperiam tempore? Ab?</p>
+          </div>
+        </div>
+      </div>
+      
+    
+</body>
+</html>
